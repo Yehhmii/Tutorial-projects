@@ -1,0 +1,205 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+body{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+.header_top{
+    background: #c9c4d00c;
+    height: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    padding: 10px;
+}
+.header_top span{
+    padding: 10px;
+}
+.header_top span a{
+    color: #000000;
+}
+.header_top span a:hover{
+    color: rgb(108, 193, 235);
+}
+.slider1,.slider2,.slider3,.slider3{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+}
+/* #imgSlider{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    
+} */
+img{
+    width: 120%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    animation: zoom 3s linear infinite;
+}
+@keyframes zoom{
+    100%{
+        width: 100%;
+    }
+}
+.slider1{
+    animation: slide1 12s linear infinite;
+}
+.slider2{
+    animation: slide2 12s linear infinite;
+}
+.slider3{
+    animation: slide3 12s linear infinite;
+}
+.slider4{
+    animation: slide4 12s linear infinite;
+}
+@keyframes slide1{
+    0%{
+        visibility: visible;
+    }
+    25%{
+        visibility: hidden;
+    }
+    50%{
+        visibility: hidden;
+    }
+    75%{
+        visibility: hidden;
+    }
+    100%{
+        visibility: visible;
+    }
+}
+@keyframes slide2{
+    0%{
+        visibility: hidden;
+    }
+    25%{
+        visibility: hidden;
+    }
+    50%{
+        visibility: visible;
+    }
+    75%{
+        visibility: hidden;
+    }
+    100%{
+        visibility: hidden;
+    }
+}
+@keyframes slide3{
+    0%{
+        visibility: hidden;
+    }
+    25%{
+        visibility: hidden;
+    }
+    50%{
+        visibility: hidden;
+    }
+    75%{
+        visibility: visible;
+    }
+    100%{
+        visibility: hidden;
+    }
+}
+@keyframes slide4{
+    0%{
+        visibility: hidden;
+    }
+    25%{
+        visibility: hidden;
+    }
+    50%{
+        visibility: hidden;
+    }
+    75%{
+        visibility: hidden;
+    }
+    100%{
+        visibility: visible;
+    }
+}
+.text-box{
+    width: 600px;
+    height: 200px;
+    position:absolute;
+    top: 200px;
+    left: 100px;
+    background:rgba(0,0,0,0.7) ;
+}
+.text-box h2{
+   color: #fff;
+   text-align: center;
+}
+.text-box p{
+    color: #fff;
+    text-align: center;
+ }
+.header_ln{ 
+    width: 100%;
+    padding: 20px 100px;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7));
+    position: relative;
+}
+.nav_logo label{
+    font-size: 42px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 900;
+}
+.nav_menu nav ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+.nav_menu li {
+    margin-right: 20px; 
+}
+.nav_menu li:last-child {
+    margin-right: 0; 
+}
+.nav_menu nav a{
+    position: relative;
+    font-size: 18px;
+    color: #fff;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 30px;
+}
+.nav_menu nav a::before{
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width:0;
+    height: 2px;
+    background: #fff;
+    transition: all .2s ease-in-out;
+}
+.nav_menu nav a:hover::before{
+    width: 100%;
+}
+
+/* style for next div text-ppl */
+.cities {
+    background-color: black;
+    color: white;
+    margin: 20px;
+    padding: 20px;
+  }
